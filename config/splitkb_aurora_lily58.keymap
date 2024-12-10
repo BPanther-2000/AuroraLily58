@@ -39,13 +39,13 @@ bindings = <
 
 		lower_layer {
 // ----------------------------------------------------------------------------------------------------------------------------------------------------
-// |        |         |      |       |       |       |                     |   F7      |    F8      |       F9    |     F10     |    F11      |  F12  |
+// |        |         |      |       |       |       |                     |   F6      |    F7      |       F8    |     F9      |    F10      |  BSPC |
 // |        |         |      |       |       |       |                     |  BTCLR    |    BT0     |      BT1    |     BT2     |   BT/USB    |  HOME |
 // |        |         |      |       |       |       |                     |EXT P_ON   |EXT P_OFF   |EXT P_TOG    |    MUTE     |   VOL UP    |    `  |
 // |        |         |      |       |       |       |       |  | reset    |           |      {     |     }       |    PREV     |   VOL DN    |  NEXT |
 //                           |       |       |       |       |  | Boot     |           |      [     |     ]       |
 bindings = <
-     &trans  &trans   &trans  &trans  &trans  &trans    &kp F7     &kp F8        &kp F9        &kp F10      &kp F11        &kp F12
+     &trans  &trans   &trans  &trans  &trans  &trans    		    &kp F6     &kp F7       &kp F8        &kp F9      &kp F10        &kp BSPC
      &trans   &trans   &trans  &trans  &trans  &trans                        &bt BT_CLR &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2 &out OUT_TOG   &kp HOME
      &trans   &trans   &trans  &trans  &trans  &trans                        &ext_power EP_ON  &ext_power EP_OFF    &ext_power EP_TOG &kp C_MUTE   &kp C_VOL_UP  &kp GRAVE
      &trans   &trans   &trans  &trans  &trans  &trans   &trans   &sys_reset  &trans     &kp LBRC      &kp RBRC      &kp C_PREV   &kp C_VOL_DN   &kp C_NEXT
@@ -57,13 +57,13 @@ bindings = <
 
 		raise_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |  F1   |   F2   |   F3    |    F4    |  F5   |  F6   |                                         |        |       |       |      |       |       |
+// |       |   F1   |   F2    |    F3    |  F4   |  F5   |                                         |        |       |       |      |       |       |
 // |       |       |    UP    |          |       |       |                                         |        |       |       |      |       |       |
 // |       |  LEFT  |  DOWN   | RIGHT    |       |       |                                         |        |       |       |      |       |       |
 // |       |        |         |          |RGB_BRD|RGB_BRI|        |                       |        |        |       |       |      |       |       |
 //                            |  RGB_TOG |RGB_HUD|RGB_HUI|        |                       |        |        |       |       |
 			bindings = <
-    &kp F1  &kp F2    &kp F3    &kp F4    &kp F5  &kp F6                                            &trans  &trans  &trans  &trans &trans  &trans
+    &trans  &kp F1    &kp F2    &kp F3    &kp F4  &kp F5                                            &trans  &trans  &trans  &trans &trans  &trans
     &trans  &trans     &kp UP   &trans    &trans  &trans                                            &trans  &trans  &trans  &trans &trans  &trans
     &trans  &kp LEFT  &kp DOWN  &kp RIGHT &trans  &trans                                            &trans  &trans  &trans  &trans &trans  &trans
     &trans  &kp BSLH  &kp PIPE  &trans    &rgb_ug RGB_BRD  &rgb_ug RGB_BRI &trans          &trans   &trans  &trans  &trans  &trans &trans  &trans
